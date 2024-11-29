@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>10_伪类选择器_结构伪类_2.html</title>
+    <style>
+        /*选中的是div的最后儿子p元素（按照所有兄弟计算）-看结构1*/
+        /*div>p:last-child {
+            color: red;
+        } */
+        /*选中的是div的最后儿子p元素（按照所有兄弟计算）-看结构1*/
+        /* div>p:nth-child(3) {
+            color: red;
+        } */
+         /*选中的是特定p元素（按照所有兄弟计算）-看结构2*/
+        /* div>p:nth-child(-n+5) {
+            color: red;
+        } */
+         /*选中的是div中第一个p元素（按照所有同类型兄弟计算）-看结构3*/
+        /* div>p:first-of-type {
+            color: red;
+        } */
+         /*选中的是div中最后一个p元素（按照所有同类型兄弟计算）-看结构3*/
+        /* div>p:last-of-type {
+            color: red;
+        } */
+          /*选中的是div中特点p元素（按照所有同类型兄弟计算）-看结构3*/
+        div>p:nth-of-type(3){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--结构1-->
+    <!-- <div>
+        <p>赵六：99分</p>
+        <p>张三：98分</p>
+        <p>李四：88分</p>
+        <p>王五：78分</p>
+        <p>王六：38分</p>
+        <p>王八：68分</p>
+    </div> -->
+    <!--结构2-->
+    <!-- <div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>71</p>
+        <p>72</p>
+        <p>73</p>
+    </div> -->
+    <!--结构3-->
+    <div>
+        <span>测试</span>
+        <p>赵六：99分</p>
+        <p>张三：98分</p>
+        <p>李四：88分</p>
+        <span>测试0</span>
+        <p>王五：78分</p>
+        <p>王六：38分</p>
+        <p>王八：68分</p>
+        <span>测试2</span>
+    </div>
+</body>
+</html>

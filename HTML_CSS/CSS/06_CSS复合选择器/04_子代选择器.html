@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>04_子代选择器</title>
+    <style>
+        /* div a {
+            color: blue;
+        } */
+         div>a {
+            color: brown;
+         }
+         div>p>a {
+            color: rgb(63, 48, 183);
+         }
+         .foot>a {
+            color: rgb(199, 141, 180);
+         }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <p>
+            <a href="#">4</a>
+            <div class="foot">
+                <a href="#">5</a>
+            </div>
+        </p>
+
+    </div>
+</body>
+</html>

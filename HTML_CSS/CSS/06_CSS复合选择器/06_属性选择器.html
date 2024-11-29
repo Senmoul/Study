@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 第一种写法：选中具有title属性的元素 */
+        /* [title] {
+            color: red;
+        } */
+          /* 第二种写法：选中具有title属性且属性值为qq的元素 */
+          /* [title="qq"] {
+            color: red;
+        }  */
+          /* 第三种写法：选中具有title属性且属性值开头为字母d开头的元素 */
+          /* [title^="d"] {
+            color: red;
+        }  */
+        /* 第四种写法：选中具有title属性且属性值开头为字母d结尾的元素 */
+        /* [title$="d"] {
+            color: red;
+        }  */
+        /* 第五种写法：选中具有title属性且属性值中有字母d的元素 */
+        [title*="d"] {
+            color: red;
+        } 
+
+
+    </style>
+</head>
+<body>
+    <div title="qq">q</div>
+    <div title="rrd">r</div>
+    <div title="df">f</div>
+    <div title="dd">d</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>05_兄弟选择器</title>
+    <style>
+        /* 其后仅仅相邻的 -选中div后紧紧相邻的兄弟p元素 - 相邻兄弟选择器*/
+        /* div+p {
+            color: brown;
+        } */
+        /* div后所有的p元素 -通用兄弟选择器 */
+        div~p {
+            color: brown;
+        }
+        li+li {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <p>1</p>
+    <div>学习</div>
+    <p>2</p>
+    <p>3</p>
+    <ul>
+        <li>主页</li>
+        <li>秒杀</1i>
+        <li>订单</li>
+        <li>我的</li>
+    </ul>
+</body>
+</html>

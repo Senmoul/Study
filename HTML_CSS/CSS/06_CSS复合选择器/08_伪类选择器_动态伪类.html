@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>08_伪类选择器_动态伪类.html</title>
+    <style>
+        /* 像类不是类，是一个状态的描述 */
+        /* 选没访问过的 */
+        a:link {
+            color: aquamarine;
+        }
+        /* 选访问过的 */
+        a:visited {
+            color: beige;
+        }
+        /* 鼠标悬浮 */
+        a:hover {
+            color: rgb(45, 199, 39);
+        }
+        /* 点下去的时候 */
+        a:active {
+            color: brown;
+        }
+        input:focus {
+            color: aquamarine;
+            background-color: azure;
+        }
+        select:focus {
+            color: aquamarine;
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com">baidu</a>
+    <a href="https://www.jd.com">jd</a>
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+    <br>
+    <select>
+        <option value="beijing">北京</option>
+        <option value="sh">上海</option>
+    </select>
+</body>
+</html>
